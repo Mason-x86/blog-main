@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>Home</title>
+    </head>
+
+    
+      
+
+
+<p> </p>
+
+    <body>
+        
+        <div id="header">
+           <h1>Welcome to the Blog page</h1>
+           <h1>Press the add article button to add a article!</h1>
+        </div>
+        
+
+        <div id="navigation"> 
+            <ul>
+                <li><a href="/" class="btn btn-success">Home</a></li>
+                <li><a href="/articles/about_me" class="btn btn-success">About Me</a></li>
+                <li><a href="/articles/contact_me" class="btn btn-success">Contact Me</a></li>
+                <li><a href="/articles/snake" class="btn btn-success">Snake</a></li>
+                <li><a href="/articles/dissertation" class="btn btn-success">Dissertation</a></li>
+                <li><a href="/articles/mark_down_blog" class="btn btn-success">Blog Example</a></li>
+            </ul>
+        </div> 
+        <div class="column1of3">             
+            <div class="blogheader">
+                <div class="blogtitle">
+                    Blog Articles
+                </div>
+                
+                <p>these articles use MongoDB and Mongoose! to create a new article click on the button bellow to leave a comment on my website :)</p>
+            </div>
+              
+                <div class="blog-btn-success">
+        
+                        <li>
+                            <a href="/articles/new" class="btn btn-success">New Article</a>
+                        </li>
+                 
+                    
+                </div>
+                
+                <% articles.forEach(article => { %>
+                    <div class ="columnblog">
+                        <div class="card-body">
+                            <h4 class="card-title"> <%= article.title %> </h4>
+                            <h4 class="card-title"> <%= article.description %> </h4>
+                            <h4 class="card-title"> <%= article.markdown %> </h4>
+                            <h4 class="card-title"> <%= article.createdAt%> </h4>
+                            <div class="card-subtitle text-muted mb-2"></div>
+           
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div > </div > 
+        <div id="footer"> 
+            <p>Credit to the following Youtubers who's videos have assisted the creation of this website</p>
+            <p>Web Dev Simplified: https://www.youtube.com/watch?v=1NrHkjlWVhM</p>
+        </div > 
+        
+
+    the code in important goes here
+        
+    </body>
+</html>

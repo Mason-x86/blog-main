@@ -1,0 +1,78 @@
+body {
+    background: #3b3b3b;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height:40px;
+
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+.btn {
+    background: #2ecc71;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #2CC06B;
+}
+
+
+#header {
+  background-color:#000000;
+  padding:10px;
+  color: white;
+  height:120px;}
+  
+ #navigation {
+  background-color:#000000;
+  padding:10px;
+  height:40px;}
+
+  #footer {
+    background-color:#cccccc;
+    padding:10px;
+    height:200px;
+    clear:both;
+    border-top:20px solid #ffffff;}
+
+    /* 3 columns */
+
+
+.column1{
+float:left;
+width:80%;
+margin-left:2%;
+background-color:#cccccc;
+padding:1%;
+margin-top:20px;
+height:17500px;}
+
+#centredheader {
+  height:120px;
+  text-align: center;
+}

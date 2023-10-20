@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>New</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>You're on the new article page</h1>
+            <h1>Fill in the input boxes bellow to create a article!</h1>
+        </div>
+        
+
+        <div id="navigation"> 
+            <ul>
+                <li><a href="/" class="btn btn-success">Home</a></li>
+                <li><a href="/articles/about_me" class="btn btn-success">About Me</a></li>
+                <li><a href="/articles/contact_me" class="btn btn-success">Contact Me</a></li>
+                <li><a href="/articles/snake" class="btn btn-success">Snake</a></li>
+                <li><a href="/articles/dissertation" class="btn btn-success">Dissertation</a></li>
+                <li><a href="/articles/mark_down_blog" class="btn btn-success">Blog Example</a></li>
+            </ul>
+        </div> 
+
+        <div class="container">
+            <h1 class="mb-4">New Article</h1>
+            <form action="/articles" method="POST">
+                <%- include('_form_fields') %>
+            </form>
+        </div>
+        <h1>
+        </h1>
+    </body>
+</html>

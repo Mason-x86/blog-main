@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+body {
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+     */
+    background: #3b3b3b;
+   
+}
+.wrapper {
+    
+    width: 65vmin;
+    height: 70vmin;
+    border-radius: 5px;
+    background: #293447;
+}
+.game-details {
+    color: #B8C6DC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.play-board {
+    width: 100%;
+    height: 100%;
+    background: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #212837
+}
+.play-board .food{
+    background: #FF003D;
+}
+.play-board .head{
+    background: #60CBFF;
+}
+.nextLine {
+    display: block;
+}
+.btn {
+    background: #2ecc71;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #2CC06B;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height:40px;
+
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+
+  .btn {
+      background: #2ecc71;
+      height: 30px;
+      color: white;
+      border-radius: 4px;
+  }
+
+  .btn:hover {
+      background: #2CC06B;
+  }
+
+  #header {
+    background-color:#000000;
+    padding:10px;
+    color: white;
+    height:120px;}
+    
+    
+   #navigation {
+    background-color:#000000;
+    padding:10px;
+    height:40px;}
+
+    #footer {
+      background-color:#cccccc;
+      padding:10px;
+      height:200px;
+      clear:both;
+      border-top:20px solid #ffffff;}
+
+      /* 3 columns */
+
+
+.column1of3, .column2of3, .column3of3 {
+  float:left;
+  width:28%;
+  margin-left:2%;
+  background-color:#cccccc;
+  padding:1%;
+  margin-top:20px;
+  height:175px;}
